@@ -1,0 +1,33 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+	<Script file="MailNotifier.lua"/>
+
+	<Frame name="B_MN_Frame" toplevel="true" parent="UIParent" enableMouse="true" hidden="true" frameStrata="DIALOG">
+		<Anchors>
+			<Anchor point="TOPLEFT" relativePoint="TOPLEFT"></Anchor>
+			<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT"></Anchor>
+			<Anchor point="BOTTOMLEFT" relativePoint="BOTTOMLEFT"></Anchor>
+			<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT"></Anchor>
+		</Anchors>
+
+		<Layers>
+			<Layer>
+				<Texture>
+					<Color a="0.6" r="0" g="1" b="0" />
+				</Texture>
+			</Layer>
+		</Layers>
+
+		<Scripts>
+			<OnLoad>
+				B_MN_OnLoad()
+			</OnLoad>
+			<OnEvent>
+				B_MN_OnEvent()
+			</OnEvent>
+			<OnMouseDown>
+				B_MN_OnMouseDown()
+			</OnMouseDown>
+		</Scripts>
+	</Frame>
+</Ui>

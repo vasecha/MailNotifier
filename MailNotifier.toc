@@ -1,0 +1,8 @@
+## Interface: 11200
+## Title: Mail|cff60ff00Notifier|r
+## Author: EinBaum https://github.com/EinBaum
+## Version: 1.0
+## Notes: Fullscreen mail notifications. Useful for trading alts that just wait for auctions to sell.
+## SavedVariables:
+MailNotifier.xml
+MailNotifier.lua
